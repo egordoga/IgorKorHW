@@ -11,7 +11,7 @@ public class ContactList {
     }
 
 
-    // MY
+    // MY ********************************************************************************
     public void removeContact(int position){
         for (int i = position-1; i <  list.length; i++) {
             list[position-1] = list[position];
@@ -19,7 +19,28 @@ public class ContactList {
                 break;
             }
         }
-        getContact(int position)
+
+        //getContact(int position)
+    }
+
+    public void removeLast(){
+        for (int i = 0; i < list.length; i++) {
+            if (list[i] == null){
+                list[i-1] = null;
+                break;
+            }
+
+        }
+    }
+
+    public  int findContact(String name){
+        int position = 0;
+        for (int i = 0; i < list.length; i++) {
+            if (list[i].name.equals(name) ){
+                position = i;
+            }
+        }
+        return position;
     }
 
     public Contact getContact(int position){
