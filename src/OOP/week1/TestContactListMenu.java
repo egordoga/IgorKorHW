@@ -9,7 +9,7 @@ public class TestContactListMenu {
         ContactList contactList = new ContactList();
 
         ContactList menu = new ContactList();
-        menu.start(contactList);
+       // menu.start(contactList);
 
     }
 }
