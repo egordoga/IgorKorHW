@@ -9,11 +9,9 @@ public class Client {
      String phone;
      Car car;
 
-     Client[] list = new Client[10];
-     int size = 0;
-
-     public void addClient(Client client) {
-        list[size] = client;
-        size++;
-     }
+    public Client(String name, String phone, Car car) {
+        this.name = name;
+        this.phone = phone;
+        this.car = car;
+    }
 }
