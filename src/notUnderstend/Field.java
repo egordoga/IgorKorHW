@@ -11,11 +11,11 @@ public class Field {
     Field field[] = new Field[5];
 
     public Field(){}
-    public Field(Boolean name, int age) {
-        this.logic = name;
-        this.number = age;
-    }
 
+    public Field(Boolean logic, int number) {
+        this.logic = logic;
+        this.number = number;
+    }
 
     public void initField(){
         for (int i = 0; i <5 ; i++) {
