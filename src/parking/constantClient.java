@@ -16,25 +16,36 @@
             this.plase = plase;
         }
 
-        parking.ConstantClient[] listConstant = new parking.ConstantClient[50];
+        ConstantClient[] listConstant = new ConstantClient[50];
         int size = 0;
 
-        public void addConstClient(parking.ConstantClient constantClient) {
+        public void addConstClient(ConstantClient constantClient) {
             listConstant[size] = constantClient;
             size++;
         }
 
-        private void showAddContactMenu(){
+        private void showAddConstantClienttMenu(){
             System.out.println("Input name");
             String name = scanner.next();
             System.out.println("Input phone");
             String phone = scanner.next();
-            System.out.println("Input phone");
-         /*   String phone = scanner.next();
+            System.out.println("Input car model");
+            String model = scanner.next();
+            System.out.println("Input car number");
+            String number = scanner.next();
+            System.out.println("Input car ID");
+            int typeId = scanner.nextInt();
 
-            ConstantClient constantClient = new ConstantClient("Ivanov", "0502252255", );
-            contact.initContact(name, phone);
-            contactList.addContact(contact);*/
+            //Area area = new Area();
+            //area.showFree();
+
+            System.out.println("Input car place");
+            int place = scanner.nextInt();
+
+            Car car = new Car(model, number, typeId);
+            ConstantClient constantClient = new ConstantClient(name, phone, car, plase);
+            //contact.initContact(name, phone);
+            //contactList.addContact(contact);*/
         }
 
 
